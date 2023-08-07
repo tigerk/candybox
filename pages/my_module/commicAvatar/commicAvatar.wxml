@@ -1,0 +1,32 @@
+<view class="content">
+    <text class="slogan">上传一张照片，一键生成动漫头像</text>
+    <image class="image" src="{{imageSrc}}" mode="widthFix"></image>
+    <!-- <button class="getBtn" type="default" data-event-opts="{{[['tap',[['upload',['$event']]]]]}}" bindtap="__e">
+        选择图片
+    </button> -->
+    <view style="width: 100%;">
+        <van-row gutter="10">
+            <van-col offset="2" span="10">
+                <van-button round type="default" block custom-class="getBtn" bind:tap="downloadImg">下载图片</van-button>
+            </van-col>
+            <van-col span="10">
+                <van-button round type="default" data-event-opts="{{[['tap',[['upload',['$event']]]]]}}" bind:tap="upload" block custom-class="getBtn">
+                    选择图片
+                </van-button>
+            </van-col>
+        </van-row>
+    </view>
+    <!-- <view class="text-area">
+        <text class="title">1</text>
+        <text class="title">2</text>
+        <text class="title">3</text>
+    </view> -->
+    <view class="text-area">
+        <text class="title">1、选择图片</text>
+        <text class="title">2、AI智能生成</text>
+        <text class="title">3、下载图片</text>
+    </view>
+    <view class="text-area">
+        <text class="title">请使用正面头像以获得最佳效果</text>
+    </view>
+</view>

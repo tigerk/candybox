@@ -1,0 +1,18 @@
+{
+  "name": "superman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@codeup.aliyun.com:63b4ddf88d9a873a30ab025e/superman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.10.21"
+  }
+}

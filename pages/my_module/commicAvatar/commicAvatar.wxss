@@ -1,0 +1,81 @@
+page {
+    background-color: #bd2c23
+}
+
+page::after {
+    position: fixed;
+    content: '';
+    left: -1000px;
+    top: -1000px;
+    -webkit-animation: shadow-preload .1s;
+    -webkit-animation-delay: 3s;
+    animation: shadow-preload .1s;
+    animation-delay: 3s
+}
+
+@-webkit-keyframes shadow-preload {
+    0% {
+        background-image: url(https://cdn1.dcloud.net.cn/img/shadow-grey.png)
+    }
+
+    100% {
+        background-image: url(https://cdn1.dcloud.net.cn/img/shadow-grey.png)
+    }
+}
+
+@keyframes shadow-preload {
+    0% {
+        background-image: url(https://cdn1.dcloud.net.cn/img/shadow-grey.png)
+    }
+
+    100% {
+        background-image: url(https://cdn1.dcloud.net.cn/img/shadow-grey.png)
+    }
+}
+
+[data-custom-hidden="true"],
+[bind-data-custom-hidden="true"] {
+    display: none !important;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.image {
+    border: 20rpx solid #fff;
+    border-radius: 20rpx;
+    height: auto;
+    width: 600rpx;
+    margin-top: 50rpx;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50rpx
+}
+
+.text-area {
+    display: flex;
+    width: 600rpx;
+    justify-content: space-around;
+    margin-top: 30rpx
+}
+
+.title {
+    text-align: center;
+    font-size: 30rpx;
+    color: #fff
+}
+
+.slogan {
+    color: #fff;
+    margin-top: 50rpx
+}
+
+.getBtn {
+    /* width: 600rpx; */
+    font-size: 33rpx !important;
+    font-weight: 600 !important;
+}

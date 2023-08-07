@@ -1,0 +1,52 @@
+<!--pages/home/info/index.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<view>
+  <view class="top_info">
+    <view>❤❤小程序永久免费,欢迎添加-防止丢失❤❤</view>
+  </view>
+  <!-- <ad unit-id="{{bannerUnitId}}" ad-intervals="30"></ad> -->
+
+  <view class="items-list-wrap wr-class">
+  <block wx:for="{{itemsList}}" wx:for-item="item" wx:key="index" >
+    <view wx:if="{{index==0}}" class="line"></view>
+    <view class="item-list-wrap" data-id="{{item}}" bind:tap="selectTop">
+        <text class="item_name">{{item.name}}</text>
+        <text class="item_price">{{item.price}}</text>
+        <text class="item_ratio" wx:if="{{item.ratio<0}}" style="color: #f00;">{{filters.toFix(item.ratio*100,2)}}%</text>
+        <text class="item_ratio" wx:else style="color: #090;">{{filters.toFix(item.ratio*100,2)}}%</text>
+    </view>
+    <view class="line"></view>
+  </block>
+</view>
+<view class="tool_list">
+        <navigator appId="wx3d629b96bdd71277" class="nav-li bg-brown light" extraData="" hoverClass="none" openType="navigate" path="" target="miniProgram" version="release">
+            <view class="label_wrap" style="background-color: {{info.labelColor}}"> {{info.labelType}} </view>
+            <view style="margin-bottom: 20rpx;">
+              <button >
+        小业校园
+      </button>
+    </view>
+        </navigator>
+      </view><view style="margin-bottom: 20rpx;"></view>
+    <view class="tool_list">
+        <navigator appId="wx2d8b65d6cf6832f6" class="nav-li bg-brown light" extraData="" hoverClass="none" openType="navigate" path="" target="miniProgram" version="release">
+            <view class="label_wrap" style="background-color: {{info.labelColor}}"> {{info.labelType}} </view>
+            <view style="margin-bottom: 20rpx;">
+              <button >
+        喝酒神器
+      </button>
+    </view>
+        </navigator>
+    </view>
+    <view style="margin-bottom: 20rpx;"></view>
+    <view class="tool_list">
+        <navigator appId="wx187b49551d6f57cc" class="nav-li bg-brown light" extraData="" hoverClass="none" openType="navigate" path="" target="miniProgram" version="release">
+            <view class="label_wrap" style="background-color: {{info.labelColor}}"> {{info.labelType}} </view>
+            <view style="margin-bottom: 20rpx;">
+              <button >
+        去水印助手
+      </button>
+    </view>
+        </navigator>
+    </view>
+  </view>

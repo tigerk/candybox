@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "糖果工具箱",
+  "navigationBarBackgroundColor": "#0BC15F",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

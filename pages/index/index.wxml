@@ -1,0 +1,37 @@
+<!-- pages/home/home/index.wxml -->
+<view>
+  <!-- <ad unit-id="{{videoUnitId}}" ad-type="video" ad-theme="white" ad-intervals="30"></ad> -->
+</view>
+<!-- <t-tabs style="margin-top: 5rpx;" defaultValue="{{0}}" wx:if="{{classlist.length>0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" class="custom-tabs">
+  <t-tab-panel wx:for="{{classlist}}" wx:key="index" wx:for-item="class_item" label="{{class_item.name}}" value="{{index}}">
+    <view class="items-list-wrap">
+      <block wx:for="{{class_item.itemsList}}" wx:for-item="item" wx:key="index">
+        <view class="item-list-wrap" data-id="{{item}}" bind:tap="selectTop">
+          <view class="item_left">
+            <text></text>
+          </view>
+          <image class="imgs data-v-8d1cd75a" lazyLoad="{{true}}" src="{{item.icon}}"></image>
+          <text class="item_name">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </t-tab-panel>
+</t-tabs> -->
+<view wx:if="{{classlist.length>0}}">
+  <view wx:for="{{classlist}}" wx:key="index" wx:for-item="class_item">
+    <van-cell title="{{class_item.name}}" size="large" custom-class="cell-title" icon="location-o" />
+    <van-grid square icon-size="32">
+      <block wx:for="{{class_item.itemsList}}" wx:for-item="item" wx:key="index">
+        <view wx:if="{{item.id == '156703113375829687'}}">
+          <van-grid-item icon="{{item.icon}}" text="{{item.name}}" data-id="{{item}}" text-class="grid-item" bind:tap="selectTop" badge="新" />
+        </view>
+        <view wx:if="{{item.id != '156703113375829687'}}">
+          <van-grid-item icon="{{item.icon}}" text="{{item.name}}" data-id="{{item}}" text-class="grid-item" bind:tap="selectTop" />
+        </view>
+      </block>
+    </van-grid>
+  </view>
+</view>
+<view>
+  <van-button type="primary" open-type="feedback" block>意见与反馈（新工具请留言）</van-button>
+</view>

@@ -1,0 +1,35 @@
+<canvas canvasId="myCanvas" style="position:fixed; left:100%; width:{{canvasWidth}}px; height:{{canvasHeight}}px"></canvas>
+<view class="myContainer">
+    <image class="userImage" mode="aspectFit" src="{{userImage}}" style="position:absolute; margin-left:{{bgMarginLeft+marginLeft}}px;  margin-top:{{bgMarginTop+marginTop}}px; width:{{picWidth}}px;  height:{{picHeight}}px; background-color:black"></image>
+    <image class="iPhoneBg" src="{{selectedBgItem.selectedSrc}}" style="position: absolute; margin-left:{{bgMarginLeft}}px;margin-top:{{bgMarginTop}}px; width:{{bgWidth}}px; height:{{bgHeight}}px"></image>
+    <view style="display:flex; flex:1; flex-direction:row-reverse">
+        <view class="btn-area" style="display:flex; width:{{screenWidth*0.4-bgMarginLeft}}px; flex-direction:column;justify-content:center; align-items:center">
+            <text style="font-size:25rpx; margin-bottom:10rpx">{{selectedBgItem.title}}</text>
+            <radio-group bindchange="radioChange" class="group" hidden="{{selectedBgItem.srcs.length==1}}" style="margin-bottom:30rpx; width:75%">
+                <view class="label-2" style="height:60rpx" wx:for="{{selectedBgItem.srcs}}">
+                    <label class="label-2__text">
+                        <radio hidden checked="{{item.checked}}" id="{{item.name}}" value="{{index}}"></radio>
+                        <view class="label-2__icon">
+                            <view class="label-2__icon-checked" style="opacity:{{item.checked?1:0}}"></view>
+                        </view>
+                        <text style="font-size:30rpx">{{item.name}}</text>
+                    </label>
+                </view>
+            </radio-group>
+            <button bindtap="createPic" class="butss">保存图片</button>
+            <view class="text">
+                <text>如果保存过程中，制作过慢请耐心等待，或者请再次点击【保存图片】</text>
+            </view>
+        </view>
+    </view>
+    <scroll-view class="scroll-view_H" scrollX="true" style="width: 100%; height:220rpx;">
+        <view style="display:flex; flex-direction:row; height:220rpx; width: 100%;">
+            <view bindtap="changeBg" data-index="{{index}}" style="height:220rpx; width:200rpx; display:flex; flex-direction:column; align-items:center;" wx:for="{{bgSrc}}">
+                <image mode="aspectFit" src="{{item.srcs[item.selectedSrcIndex].src}}" style="width:200rpx; height:180rpx;"></image>
+                <text style="font-size:20rpx; padding-top:10rpx; padding-bottom:10rpx">
+                    {{item.title}}
+                </text>
+            </view>
+        </view>
+    </scroll-view>
+</view>

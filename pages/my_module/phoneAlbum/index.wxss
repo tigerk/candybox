@@ -1,0 +1,56 @@
+.btn-area button {
+    background-color: #ff4444;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 400;
+    height: 96rpx;
+    line-height: 96rpx;
+    width: 640rpx;
+}
+
+.btn-area button:hover {
+    background-color: #ff4444;
+    color: #fff;
+}
+
+.contact-button {
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    color: rgba（125，0，0，0.1）;
+    display: flex;
+    font-size: 28rpx;
+    font-weight: 300;
+    height: 32rpx;
+    list-style: none;
+    margin: 0rpx 0rpx 20rpx;
+    outline: none;
+    padding: 0rpx;
+}
+
+.contact-button::after {
+    border: none;
+    color: rgba（125，0，0，0）;
+}
+
+.text {
+    color: #7e8f8f;
+    font-size: 24rpx;
+    margin-left: 60rpx;
+    margin-right: 52rpx;
+    margin-top: 54rpx;
+}
+
+.weui-footer {
+    align-items: center;
+    bottom: 240rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.weui-footer__link {
+    color: #586c94;
+    font-size: 72rpx;
+    margin: 0 .62em;
+}

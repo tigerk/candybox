@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "动漫头像",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index"
+  }
+}

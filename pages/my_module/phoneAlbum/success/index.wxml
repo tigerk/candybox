@@ -1,0 +1,10 @@
+
+<view style="display:flex; flex-direction:column; align-items:center; padding-left:20rpx;padding-right:20rpx; margin-top:90rpx; justify-content:center;">
+    <icon size="80" type="success"></icon>
+    <text style="margin-bottom:60rpx; margin-top:40rpx; color:gray;"> 已保存至相册</text>
+    <button bindtap="goAlbum" class="btn-area" style="margin-top:0rpx">再来一张</button>
+    <button class="btn-area btn-share" openType="share" style="margin-top:48rpx">分享好友</button>
+    <!-- <view style="margin-top:48rpx">
+      <ad-custom unit-id="adunit-6af8aa93e20539e2" ></ad-custom>
+    </view> -->
+</view>

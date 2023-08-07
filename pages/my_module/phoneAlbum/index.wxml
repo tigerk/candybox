@@ -1,0 +1,12 @@
+<view class="page" style="display:flex; flex-direction:column; align-items:center;">
+    <image mode="aspectFit" src="/images/images_mockup.jpg" style="height:700rpx"></image>
+    <view class="btn-area">
+        <button bindtap="goAlbum" class="butss">选择图片</button>
+    </view>
+    <view class="text">
+        <text>让您轻松的把截图套上手机壳，支持iPhone，华为，小米，OPPO, 三星，Watch等设备哦！更多机型持续更新中...</text>
+    </view>
+</view>
+<!-- <view style="margin-top:10px ;" wx:if="{{appConfig.ad.wxcustom}}">
+    <ad-custom unit-id="{{appConfig.ad.wxcustom}}"></ad-custom>
+</view> -->

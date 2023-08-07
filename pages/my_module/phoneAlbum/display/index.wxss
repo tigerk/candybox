@@ -1,0 +1,49 @@
+.myContainer {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.label-2__icon {
+    background: #d3d3d3;
+    border-radius: 50px;
+    display: inline-block;
+    height: 18px;
+    margin-right: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 18px;
+}
+
+.label-2__icon-checked {
+    background: #1aad19;
+    border-radius: 50%;
+    height: 12px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 12px;
+}
+
+.btn-area button {
+    font-size: 32rpx;
+    font-weight: 400;
+    height: 96rpx;
+    line-height: 96rpx;
+    width: 240rpx;
+}
+
+.btn-area button,.btn-area button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.text {
+    color: #7e8f8f;
+    font-size: 24rpx;
+    margin-left: 60rpx;
+    margin-right: 52rpx;
+    margin-top: 54rpx;
+}
