@@ -1,8 +1,13 @@
+# 工具箱（微信小程序）
+
+使用了微信小程序原生开发，使用了vant weapp。
+
+体验功能，可下方的扫二维码：
 <p align="center">
   <img src="./images/wxscan.png">
 </p>
 
-### 功能清单
+## 功能清单
 1. 漫画头像
 2. 手持弹幕
 3. 二维码生成
@@ -31,10 +36,14 @@
 26. 震动
 27. 手机清灰
 
+## 使用说明
+
 ### 发布小程序
 修改project.config.json 的 appid 为自己的小程序id
 
 ### 使用的域名
+
+在微信小程序后台配置以下域名：
 ```
 https://mmbiz.qpic.cn
 https://res.wx.qq.com
@@ -46,4 +55,7 @@ https://api.btstu.cn
 https://img.xjh.me
 # 漫画头像域名
 https://akhaliq-animeganv2.hf.space
+
+因为微信小程序版本无法识别该域名：https://akhaliq-animeganv2.hf.space
+可使用nginx进行方向代理来使用。
 ```
